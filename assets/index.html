@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Directum test task</title>
+</head>
+
+<body>
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <main class="modal__content" id="modal-1-content">
+
+                    <div class="defaultForm">
+                        
+                        <div class="defaultForm__title">
+                            Форма
+                            <span class="defaultForm__close" data-micromodal-close></span>
+                        </div>
+                        <form action="/" method="post" class="defaultForm-form">
+                            <input type="text" class="defaultForm__input" placeholder="Имя">
+                            <input type="text" class="defaultForm__input" placeholder="E-mail">
+                            <textarea class="defaultForm__textarea" placeholder="Вопрос"></textarea>
+                            <div class="defaultForm-buttons">
+                                <input type="submit" class="defaultForm-buttons__button" value="Ок">
+                                <button class="defaultForm-buttons__button defaultForm-buttons__button_cancel" data-micromodal-close>Отмена</button>
+                            </div>
+                        </form>
+
+                    </div>
+                    <!-- defaultForm -->
+
+                </main>
+            </div>
+        </div>
+    </div>
+    <!-- modal -->
+
+    <header class="mainHeader">
+        <div class="mainHeader__leftColumn">
+            <a href="/" class="mainHeader__logo"></a>
+            <div class="mainMenu">
+                <div class="mainMenu__element">
+                    <a href="#" class="mainMenu__element-link">Пункт меню 1</a>
+                    <ul class="subMenu">
+                        <li class="subMenu__element">
+                            <a href="#" class="subMenu__element-link">Подпункт 1</a>
+                        </li>
+                        <li class="subMenu__element">
+                            <a href="#" class="subMenu__element-link">Подпункт 2</a>
+                        </li>
+                        <li class="subMenu__element">
+                            <a href="#" class="subMenu__element-link">Подпункт 3</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mainMenu__element">
+                    <a href="#" class="mainMenu__element-link">Пункт меню 2</a>
+                    <ul class="subMenu">
+                        <li class="subMenu__element">
+                            <a href="#" class="subMenu__element-link">Подпункт 1</a>
+                        </li>
+                        <li class="subMenu__element">
+                            <a href="#" class="subMenu__element-link">Подпункт 2</a>
+                        </li>
+                        <li class="subMenu__element">
+                            <a href="#" class="subMenu__element-link">Подпункт 3</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mainMenu__element">
+                    <a href="#" class="mainMenu__element-link">Пункт меню 3</a>
+                    <ul class="subMenu">
+                        <li class="subMenu__element">
+                            <a href="#" class="subMenu__element-link">Подпункт 1</a>
+                        </li>
+                        <li class="subMenu__element">
+                            <a href="#" class="subMenu__element-link">Подпункт 2</a>
+                        </li>
+                        <li class="subMenu__element">
+                            <a href="#" class="subMenu__element-link">Подпункт 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mainHeader__rightColumn">
+            <div class="search">
+                <input type="search" class="search__input" placeholder="Поиск">
+                <span class="search__loop"></span>
+            </div>
+        </div>
+
+    </header>
+    <main>
+
+        <div class="wideCarousel" id="carousel">
+
+            <div class="wideCarousel__element">
+                <div class="wideCarousel__element-inner">
+                    <div class="wideCarousel__element-title">Заголовок1</div>
+                    <div class="wideCarousel__element-description">Текст текст текст</div>
+                    <button data-micromodal-trigger="modal-1" class="wideCarousel__element-button js-modal-trigger">Действие</button>
+                </div>
+            </div>
+            <div class="wideCarousel__element">
+                <div class="wideCarousel__element-inner">
+                    <div class="wideCarousel__element-title">Заголовок2</div>
+                    <div class="wideCarousel__element-description">Текст текст текст</div>
+                    <button data-micromodal-trigger="modal-1" class="wideCarousel__element-button js-modal-trigger">Действие</button>
+                </div>
+            </div>
+            <div class="wideCarousel__element">
+                <div class="wideCarousel__element-inner">
+                    <div class="wideCarousel__element-title">Заголовок3</div>
+                    <div class="wideCarousel__element-description">Текст текст текст</div>
+                    <button data-micromodal-trigger="modal-1" class="wideCarousel__element-button js-modal-trigger">Действие</button>
+                </div>
+            </div>
+
+        </div>
+        <!-- wideCarousel -->
+
+        <div class="container mainWrapper">
+            <div class="row coloredColumns">
+                <div class="col defaultCol defaultCol_productListCol">
+                    <div class="defaultCol__inner">
+
+                        <div class="productList">
+                            <div class="productList__title">Заголовок</div>
+                            <div class="container">
+                                <div class="row justify-content-start">
+
+                                    <div class="col">
+                                        <div class="productList__element">
+                                            <img src="./img/product_photo.jpg" class="productList__element-photo">
+                                            <div class="productList__element-description">
+                                                Описание в несколько строчек
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="productList__element">
+                                            <img src="./img/product_photo.jpg" class="productList__element-photo">
+                                            <div class="productList__element-description">
+                                                Описание в несколько строчек
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="productList__element">
+                                            <img src="./img/product_photo.jpg" class="productList__element-photo">
+                                            <div class="productList__element-description">
+                                                Описание в несколько строчек
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="productList__element">
+                                            <img src="./img/product_photo.jpg" class="productList__element-photo">
+                                            <div class="productList__element-description">
+                                                Описание в несколько строчек
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="productList__element">
+                                            <img src="./img/product_photo.jpg" class="productList__element-photo">
+                                            <div class="productList__element-description">
+                                                Описание в несколько строчек
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="pagination">
+                                <span class="pagination__element pagination__element_active">1</span>
+                                <a href="#" class="pagination__element">2</a>
+                                <a href="#" class="pagination__element">3</a>
+                            </div>
+                            <!-- pagination -->
+
+                        </div>
+                        <!-- productList -->
+
+                    </div>
+                </div>
+
+                <aside class="col defaultCol sideBar">
+                    <div class="defaultCol__inner">
+
+                        <div class="sideBar__title">Фильтры</div>
+                        <div class="defaultCheckbox">
+                            <input type="checkbox" id="check_1" checked>
+                            <label for="check_1">Технические решения</label>
+                        </div>
+                        <div class="defaultCheckbox">
+                            <input type="checkbox" id="check_2">
+                            <label for="check_2">Бизнес решения</label>
+                        </div>
+                        <div class="defaultCheckbox">
+                            <input type="checkbox" id="check_3">
+                            <label for="check_3">Модули</label>
+                        </div>
+                        <div class="defaultCheckbox">
+                            <input type="checkbox" id="check_4">
+                            <label for="check_4">Коннекторы</label>
+                        </div>
+
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+        <!-- mainWrapper -->
+
+    </main>
+    <footer>
+        <div class="container mainWrapper">
+            <div class="row coloredColumns">
+
+                <div class="col defaultCol defaultCol_footerCol">
+                    <div class="defaultCol__inner">
+
+                        <div class="socialLinks">
+                            <div class="socialLinks__title">Подписывайтесь и читайте:</div>
+                            <div class="socialLinks-links">
+                                <a href="#" class="socialLinks__element socialLinks__element_linkedin"></a>
+                                <a href="#" class="socialLinks__element socialLinks__element_fb"></a>
+                                <a href="#" class="socialLinks__element socialLinks__element_vk"></a>
+                                <a href="#" class="socialLinks__element socialLinks__element_twitter"></a>
+                                <a href="#" class="socialLinks__element socialLinks__element_google"></a>
+                                <a href="#" class="socialLinks__element socialLinks__element_youtube"></a>
+                                <a href="mailto:example@example.com" class="socialLinks__element socialLinks__element_mail"></a>
+                            </div>
+                        </div>
+                        <!-- socialLinks -->
+
+                    </div>
+                </div>
+                <div class="col defaultCol defaultCol_footerCol">
+                    <div class="defaultCol__inner">
+                        <ul class="defaultList">
+                            <li><a href="#">Пункт меню 1</a></li>
+                            <li><a href="#">Пункт меню 2</a></li>
+                            <li><a href="#">Пункт меню 3</a></li>
+                            <li><a href="#">Пункт меню 4</a></li>
+                            <li><a href="#">Пункт меню 5</a></li>
+                            <li><a href="#">Пункт меню 6</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/lib.min.js"></script>
+    <script src="./js/main.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+</body>
+
+</html>

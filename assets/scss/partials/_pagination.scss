@@ -1,0 +1,25 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 24px;
+    &__element {
+        display: flex;
+        margin: 0 4px;
+        color: $color_10;
+        border: 1px solid $color_7;
+        width: 22px;
+        height: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        &_active {
+            cursor: not-allowed;
+        }
+        &_active,
+        &:hover {
+            color: $color_8;
+            background: $color_7;
+        }
+    }
+}

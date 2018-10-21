@@ -1,0 +1,34 @@
+.search {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    &__input {
+        border: 1px solid $color_5;
+        font-family: $os_italic;
+        color: $color_6;
+        padding: 8.5px 35px 8.5px 8px;
+        min-width: 235px;
+        transition: min-width .1s linear;
+
+        &:focus {
+            min-width: 100%;
+            &+.search__loop {
+                @include sprite($loop_focus);
+            }
+        }
+
+        @include placeholder {
+            color: $color_6
+        }
+
+    }
+
+    &__loop {
+        position: absolute;
+        right: 7px;
+        top: 7px;
+        @include sprite($loop);
+    }
+}

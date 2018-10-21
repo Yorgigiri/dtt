@@ -1,0 +1,233 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$arrow-name: 'arrow';
+$arrow-x: 30px;
+$arrow-y: 79px;
+$arrow-offset-x: -30px;
+$arrow-offset-y: -79px;
+$arrow-width: 13px;
+$arrow-height: 8px;
+$arrow-total-width: 112px;
+$arrow-total-height: 90px;
+$arrow-image: '../img/sprite/sprite.png';
+$arrow: (30px, 79px, -30px, -79px, 13px, 8px, 112px, 90px, '../img/sprite/sprite.png', 'arrow', );
+$carousel-arrow-name: 'carousel_arrow';
+$carousel-arrow-x: 0px;
+$carousel-arrow-y: 0px;
+$carousel-arrow-offset-x: 0px;
+$carousel-arrow-offset-y: 0px;
+$carousel-arrow-width: 22px;
+$carousel-arrow-height: 60px;
+$carousel-arrow-total-width: 112px;
+$carousel-arrow-total-height: 90px;
+$carousel-arrow-image: '../img/sprite/sprite.png';
+$carousel-arrow: (0px, 0px, 0px, 0px, 22px, 60px, 112px, 90px, '../img/sprite/sprite.png', 'carousel_arrow', );
+$checkbox-name: 'checkbox';
+$checkbox-x: 100px;
+$checkbox-y: 60px;
+$checkbox-offset-x: -100px;
+$checkbox-offset-y: -60px;
+$checkbox-width: 12px;
+$checkbox-height: 12px;
+$checkbox-total-width: 112px;
+$checkbox-total-height: 90px;
+$checkbox-image: '../img/sprite/sprite.png';
+$checkbox: (100px, 60px, -100px, -60px, 12px, 12px, 112px, 90px, '../img/sprite/sprite.png', 'checkbox', );
+$checkbox-checked-name: 'checkbox_checked';
+$checkbox-checked-x: 88px;
+$checkbox-checked-y: 60px;
+$checkbox-checked-offset-x: -88px;
+$checkbox-checked-offset-y: -60px;
+$checkbox-checked-width: 12px;
+$checkbox-checked-height: 12px;
+$checkbox-checked-total-width: 112px;
+$checkbox-checked-total-height: 90px;
+$checkbox-checked-image: '../img/sprite/sprite.png';
+$checkbox-checked: (88px, 60px, -88px, -60px, 12px, 12px, 112px, 90px, '../img/sprite/sprite.png', 'checkbox_checked', );
+$default-form-close-name: 'defaultForm__close';
+$default-form-close-x: 70px;
+$default-form-close-y: 60px;
+$default-form-close-offset-x: -70px;
+$default-form-close-offset-y: -60px;
+$default-form-close-width: 18px;
+$default-form-close-height: 18px;
+$default-form-close-total-width: 112px;
+$default-form-close-total-height: 90px;
+$default-form-close-image: '../img/sprite/sprite.png';
+$default-form-close: (70px, 60px, -70px, -60px, 18px, 18px, 112px, 90px, '../img/sprite/sprite.png', 'defaultForm__close', );
+$fb-name: 'fb';
+$fb-x: 82px;
+$fb-y: 0px;
+$fb-offset-x: -82px;
+$fb-offset-y: 0px;
+$fb-width: 30px;
+$fb-height: 30px;
+$fb-total-width: 112px;
+$fb-total-height: 90px;
+$fb-image: '../img/sprite/sprite.png';
+$fb: (82px, 0px, -82px, 0px, 30px, 30px, 112px, 90px, '../img/sprite/sprite.png', 'fb', );
+$google-name: 'google';
+$google-x: 82px;
+$google-y: 30px;
+$google-offset-x: -82px;
+$google-offset-y: -30px;
+$google-width: 30px;
+$google-height: 30px;
+$google-total-width: 112px;
+$google-total-height: 90px;
+$google-image: '../img/sprite/sprite.png';
+$google: (82px, 30px, -82px, -30px, 30px, 30px, 112px, 90px, '../img/sprite/sprite.png', 'google', );
+$linkedin-name: 'linkedin';
+$linkedin-x: 22px;
+$linkedin-y: 0px;
+$linkedin-offset-x: -22px;
+$linkedin-offset-y: 0px;
+$linkedin-width: 30px;
+$linkedin-height: 30px;
+$linkedin-total-width: 112px;
+$linkedin-total-height: 90px;
+$linkedin-image: '../img/sprite/sprite.png';
+$linkedin: (22px, 0px, -22px, 0px, 30px, 30px, 112px, 90px, '../img/sprite/sprite.png', 'linkedin', );
+$loop-name: 'loop';
+$loop-x: 30px;
+$loop-y: 60px;
+$loop-offset-x: -30px;
+$loop-offset-y: -60px;
+$loop-width: 20px;
+$loop-height: 19px;
+$loop-total-width: 112px;
+$loop-total-height: 90px;
+$loop-image: '../img/sprite/sprite.png';
+$loop: (30px, 60px, -30px, -60px, 20px, 19px, 112px, 90px, '../img/sprite/sprite.png', 'loop', );
+$loop-focus-name: 'loop_focus';
+$loop-focus-x: 50px;
+$loop-focus-y: 60px;
+$loop-focus-offset-x: -50px;
+$loop-focus-offset-y: -60px;
+$loop-focus-width: 20px;
+$loop-focus-height: 19px;
+$loop-focus-total-width: 112px;
+$loop-focus-total-height: 90px;
+$loop-focus-image: '../img/sprite/sprite.png';
+$loop-focus: (50px, 60px, -50px, -60px, 20px, 19px, 112px, 90px, '../img/sprite/sprite.png', 'loop_focus', );
+$mail-name: 'mail';
+$mail-x: 52px;
+$mail-y: 30px;
+$mail-offset-x: -52px;
+$mail-offset-y: -30px;
+$mail-width: 30px;
+$mail-height: 30px;
+$mail-total-width: 112px;
+$mail-total-height: 90px;
+$mail-image: '../img/sprite/sprite.png';
+$mail: (52px, 30px, -52px, -30px, 30px, 30px, 112px, 90px, '../img/sprite/sprite.png', 'mail', );
+$twitter-name: 'twitter';
+$twitter-x: 52px;
+$twitter-y: 0px;
+$twitter-offset-x: -52px;
+$twitter-offset-y: 0px;
+$twitter-width: 30px;
+$twitter-height: 30px;
+$twitter-total-width: 112px;
+$twitter-total-height: 90px;
+$twitter-image: '../img/sprite/sprite.png';
+$twitter: (52px, 0px, -52px, 0px, 30px, 30px, 112px, 90px, '../img/sprite/sprite.png', 'twitter', );
+$vk-name: 'vk';
+$vk-x: 22px;
+$vk-y: 30px;
+$vk-offset-x: -22px;
+$vk-offset-y: -30px;
+$vk-width: 30px;
+$vk-height: 30px;
+$vk-total-width: 112px;
+$vk-total-height: 90px;
+$vk-image: '../img/sprite/sprite.png';
+$vk: (22px, 30px, -22px, -30px, 30px, 30px, 112px, 90px, '../img/sprite/sprite.png', 'vk', );
+$youtube-name: 'youtube';
+$youtube-x: 0px;
+$youtube-y: 60px;
+$youtube-offset-x: 0px;
+$youtube-offset-y: -60px;
+$youtube-width: 30px;
+$youtube-height: 30px;
+$youtube-total-width: 112px;
+$youtube-total-height: 90px;
+$youtube-image: '../img/sprite/sprite.png';
+$youtube: (0px, 60px, 0px, -60px, 30px, 30px, 112px, 90px, '../img/sprite/sprite.png', 'youtube', );
+$spritesheet-width: 112px;
+$spritesheet-height: 90px;
+$spritesheet-image: '../img/sprite/sprite.png';
+$spritesheet-sprites: ($arrow, $carousel-arrow, $checkbox, $checkbox-checked, $default-form-close, $fb, $google, $linkedin, $loop, $loop-focus, $mail, $twitter, $vk, $youtube, );
+$spritesheet: (112px, 90px, '../img/sprite/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

@@ -1,0 +1,103 @@
+.wideCarousel {
+    max-width: 1920px;
+    margin: 0 auto;
+    min-height: 340px;
+    padding: 0 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background: url('../img/slider_bg.jpg') center no-repeat;
+    margin-bottom: 20px;
+
+    &__element {
+        &-inner {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        &-title {
+            font-size: 50px;
+            line-height: 54px;
+            font-family: $os_light;
+            margin-bottom: 45px;
+        }
+
+        &-description {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 45px;
+        }
+
+        &-button {
+            display: inline-block;
+            border: none;
+            text-transform: uppercase;
+            color: $color_8;
+            font-size: 16px;
+            line-height: 20px;
+            min-width: 180px;
+            padding: 7px 15px;
+            background: $color_7;
+            margin: 0 auto;
+            cursor: pointer;
+
+            &:hover {
+                background: $color_9;
+            }
+        }
+    }
+
+    & .slick {
+        &-arrow {
+            position: absolute;
+            top: 50%;
+            margin-top: -($arrow-total-height / 2);
+            background: none;
+            border: none;
+            font-size: 0;
+            overflow: hidden;
+            text-indent: -1000px;
+            cursor: pointer;
+            z-index: 2;
+            padding: 0;
+            @include sprite($carousel-arrow);
+        }
+
+        &-prev {
+            left: 60px;
+        }
+
+        &-next {
+            right: 60px;
+            transform: rotate(180deg);
+        }
+    }
+
+    @include mobile {
+        &__element {
+            &-inner {
+                padding: 0 30px;
+            }
+            &-title {
+                font-size: 30px;
+                line-height: 36px;
+                margin-bottom: 25px;
+            }
+            &-description {
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+        & .slick {
+            &-prev {
+                left: 15px;
+            }
+    
+            &-next {
+                right: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+.socialLinks {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+    &__title {
+        margin-right: 20px;
+    }
+
+    &-links {
+        display: flex;
+        align-items: center;
+    }
+
+    &__element {
+        display: block;
+        margin: 0 7.5px;
+
+        &_linkedin {
+            @include sprite($linkedin);
+        }
+
+        &_fb {
+            @include sprite($fb);
+        }
+
+        &_vk {
+            @include sprite($vk);
+        }
+
+        &_twitter {
+            @include sprite($twitter);
+        }
+
+        &_google {
+            @include sprite($google);
+        }
+
+        &_youtube {
+            @include sprite($youtube);
+        }
+
+        &_mail {
+            @include sprite($mail);
+        }
+    }
+
+    @include mobile {
+        flex-wrap: wrap;
+
+        &-links {
+            flex-wrap: wrap;
+        }
+
+        &__element {
+            margin: 7.5px;
+        }
+
+        &__title {
+            margin: 10px 0;
+        }
+    }
+}

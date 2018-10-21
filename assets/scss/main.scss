@@ -1,0 +1,176 @@
+@import 'normalize';
+@import './node_modules/bootstrap/scss/bootstrap-grid';
+@import 'partials/mixins';
+@import 'partials/variables';
+@import 'partials/fonts';
+@import 'partials/sprite';
+@import 'partials/slick';
+@import 'partials/microModal';
+
+// fonts //
+$os_light: 'open_sanslight';
+$os_regular: 'open_sansregular';
+$os_semibold: 'open_sanssemibold';
+$os_bold: 'open_sansbold';
+$os_extrabold: 'open_sansextrabold';
+$os_italic: 'open_sansitalic';
+$os_bolditalic: 'open_sansbold_italic';
+// fonts //
+
+
+
+body {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: $os_regular;
+    color: $color_3;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+
+    & li {
+        list-style: none;
+    }
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.row {
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.container {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.mainWrapper {
+    max-width: 1300px;
+}
+
+.defaultCol {
+    padding: 0 10px;
+
+    &_footerCol {
+        &:first-child {
+            max-width: 570px;
+        }
+
+        & .defaultCol {
+            &__inner {
+                display: flex;
+                align-items: center;
+                min-height: 68px;
+            }
+        }
+
+        ul.defaultList {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            width: 100%;
+        }
+    }
+
+    @include mobile {
+        flex-basis: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &_productListCol {
+            order: 2;
+            margin-bottom: 0;
+        }
+
+        &.sideBar {
+            margin-bottom: 20px;
+        }
+
+        &_footerCol {
+            &:first-child {
+                max-width: initial;
+            }
+            ul.defaultList {
+                justify-content: flex-start;
+            }
+        }
+
+
+    }
+}
+
+ul.defaultList {
+    & li {
+        margin: 7px;
+
+        & a {
+            color: $color_2;
+        }
+    }
+}
+
+.coloredColumns {
+    margin-bottom: 20px;
+
+    & .defaultCol {
+        &__inner {
+            padding: 0 10px;
+            background: $color_1;
+        }
+    }
+
+    @include mobile {
+        & .defaultCol {
+            &__inner {
+                padding-top: 7px;
+                padding-bottom: 7px;
+            }
+        }
+    }
+}
+
+.defaultCheckbox {
+    & label {
+        cursor: pointer;
+        display: block;
+        position: relative;
+        padding-left: 26px;
+    }
+
+    & input[type="checkbox"]+label {
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 5px;
+            @include sprite($checkbox);
+        }
+    }
+
+    & input[type="checkbox"]:checked+label {
+        &:before {
+            @include sprite($checkbox_checked);
+        }
+
+    }
+}
+
+@import 'partials/mainHeader';
+@import 'partials/mainMenu';
+@import 'partials/subMenu';
+@import 'partials/search';
+@import 'partials/wideCarousel';
+@import 'partials/productList';
+@import 'partials/pagination';
+@import 'partials/socialLinks';
+@import 'partials/sideBar';
+@import 'partials/defaultForm';

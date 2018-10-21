@@ -1,0 +1,39 @@
+.mainHeader {
+    background: $color_1;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    min-height: 60px;
+    align-items: center;
+    margin: 9px 0 15px;
+    &__logo {
+        width: 148px;
+        height: 32px;
+        display: block;
+        margin: 7px 0;
+        margin-right: 70px;
+        background: url('../img/mainHeader__logo.png') no-repeat;
+    }
+    &__leftColumn {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 50%;
+        margin: 7px 0;
+    }
+    &__rightColumn {
+        width: 50%;
+        margin: 7px 0;
+    }
+    @include tablet {
+        flex-wrap: wrap;
+        &__leftColumn,
+        &__rightColumn {
+            width: 100%;
+            flex-basis: 100%;
+        }
+    }
+    @include mobile {
+
+    }
+}

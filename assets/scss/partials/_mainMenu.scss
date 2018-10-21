@@ -1,0 +1,52 @@
+.mainMenu {
+    display: flex;
+
+    &__element {
+        position: relative;
+        margin: 0 10px;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        height: 60px;
+        padding-right: 25px;
+
+        &-link {
+            color: $color_2;
+
+            &:hover {
+                color: darken($color_2, 10%);
+            }
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            @include sprite($arrow);
+            top: 28px;
+            right: 9px;
+        }
+
+        &:hover {
+
+            background: $color_4;
+
+            &:after {
+                transform: rotate(180deg);
+            }
+
+            &>* {
+                color: $color_2;
+            }
+
+            & .subMenu {
+                top: 100%;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+    @include tablet {
+        flex-wrap: wrap;
+    }
+}
